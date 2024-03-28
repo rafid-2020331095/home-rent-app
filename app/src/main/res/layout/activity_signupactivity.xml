@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ui_header_design"
+    tools:context=".screens.signupactivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="170dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/he" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="235dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/start" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="17dp"
+        android:text="SIGNUP"
+        app:layout_constraintBottom_toTopOf="@+id/loginredirect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+    <EditText
+        android:id="@+id/signupusername"
+        android:layout_width="201dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/signup_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="204dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="106dp"
+        android:ems="10"
+        android:hint="GIVE PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupusername" />
+
+    <TextView
+        android:id="@+id/loginredirect"
+        android:layout_width="237dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="49dp"
+        android:gravity="center"
+        android:text="already registered?login"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="203dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/signupusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

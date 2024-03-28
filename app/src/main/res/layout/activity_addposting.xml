@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addposting">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="350dp"
+                android:layout_height="1200dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center"
+                    android:text="PLEASE FILL THE FOLLOWING INFORMATIONS"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="107dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="75dp"
+                    android:gravity="center"
+                    android:text="OVERVIEW"
+                    app:layout_constraintBottom_toTopOf="@+id/drawing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/bedroom"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="131dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="131dp"
+                    android:ems="10"
+                    android:hint="no of bedroom"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toTopOf="@+id/rentper"
+                    app:layout_constraintEnd_toStartOf="@+id/bathroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <EditText
+                    android:id="@+id/bathroom"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="no of bathroom"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toBottomOf="@+id/bedroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/bedroom"
+                    app:layout_constraintTop_toTopOf="@+id/bedroom" />
+
+                <EditText
+                    android:id="@+id/dyning"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="201dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="200dp"
+                    android:ems="10"
+                    android:hint="no of dyning"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toTopOf="@+id/emailowner"
+                    app:layout_constraintEnd_toStartOf="@+id/drawing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/drawing"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="no of drawing"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toBottomOf="@+id/dyning"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/dyning"
+                    app:layout_constraintTop_toTopOf="@+id/dyning" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="107dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginBottom="59dp"
+                    android:gravity="center"
+                    android:text="RENT"
+                    app:layout_constraintBottom_toBottomOf="@+id/rentad"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/drawing" />
+
+                <EditText
+                    android:id="@+id/rentper"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="123dp"
+                    android:ems="10"
+                    android:hint="rent per month"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toBottomOf="@+id/emailowner"
+                    app:layout_constraintEnd_toStartOf="@+id/rentad"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/dyning" />
+
+                <EditText
+                    android:id="@+id/rentad"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="advanced pay"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toBottomOf="@+id/rentper"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rentper"
+                    app:layout_constraintTop_toTopOf="@+id/rentper" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="134dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="79dp"
+                    android:layout_marginBottom="84dp"
+                    android:gravity="center"
+                    android:text="OWNERS DETAILS"
+                    app:layout_constraintBottom_toBottomOf="@+id/contact"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="contact no"
+                    android:inputType="text"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/emailowner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/emailowner" />
+
+                <EditText
+                    android:id="@+id/emailowner"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="92dp"
+                    android:ems="10"
+                    android:hint="email"
+                    android:inputType="text"
+                    app:layout_constraintBottom_toTopOf="@+id/textView23"
+                    app:layout_constraintEnd_toStartOf="@+id/contact"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="308dp"
+                    android:layout_height="83dp"
+
+
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="319dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="320dp"
+                    android:hint="Address"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/drawing">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="81dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="107dp"
+                    android:layout_height="46dp"
+                    android:gravity="center"
+                    android:text="DESCRIPTION"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.524" />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="216dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="186dp"
+                    android:layout_height="51dp"
+                    android:layout_marginEnd="76dp"
+                    android:layout_marginBottom="100dp"
+                    android:text="save"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="48dp"
+                    app:layout_constraintBottom_toTopOf="@+id/uploadimage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <Button
+                    android:id="@+id/galleryimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="202dp"
+                    android:text="galleryimage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/uploadimage" />
+
+                <Button
+                    android:id="@+id/uploadimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="34dp"
+                    android:text="uploadimage"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/galleryimage"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
